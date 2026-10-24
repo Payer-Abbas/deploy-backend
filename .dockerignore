@@ -1,0 +1,21 @@
+# -------------------------------------------------
+# .dockerignore – files/folders Docker should NOT copy
+# -------------------------------------------------
+# 1️⃣ Never ship your source‑control metadata
+.git
+.gitignore
+
+# 2️⃣ Local environment files that contain secrets
+.env
+
+# 3️⃣ Node‑modules (they will be installed inside the image)
+node_modules/
+npm-debug.log
+
+# 4️⃣ Optional OS‑specific files that sometimes appear on Windows
+Thumbs.db
+Desktop.ini
+
+# 5️⃣ Any build artefacts you might have locally (keep the image clean)
+dist/
+build/
